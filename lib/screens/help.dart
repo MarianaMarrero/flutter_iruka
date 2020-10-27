@@ -3,15 +3,14 @@ import 'package:poc_iruka_flutter/widgets/appbar.dart';
 import 'package:poc_iruka_flutter/widgets/bottom_navigation_bar.dart';
 
 import 'package:poc_iruka_flutter/widgets/drawer.dart';
-import 'package:poc_iruka_flutter/widgets/grid_categories.dart';
 
-class Home extends StatelessWidget {
+class Help extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-        appBar: appBar('INICIO'),
+    return Scaffold(
+        appBar: appBar('EVENTOS'),
         drawer: DrawerApp(),
-        body: GridCategories(),
+        body: Text('Calendario'),
         bottomNavigationBar: BottomNavigator());
   }
 }

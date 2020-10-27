@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 
 String categoriesJson = '{"categories":['
-    '{"name":"Exámenes","image":"irukaexamenes.png","id":1}, '
+    '{"name":"Exámenes","image":"irukaexamenes.png","id":1, "events": [{"start": "10:00", "description": "Control"}, {"start": "11:00", "description": "oricultivo"}]}, '
     '{"name":"Fonoaudiologo","image":"irukaoreja.png","id":2}, '
     '{"name":"Dentista","image":"irukadiente.png","id":3}, '
     '{"name":"Fisioterapia","image":"irukafisioterapia.png","id":4}, '
@@ -40,7 +40,10 @@ class _GridCategoriesState extends State<GridCategories> {
         return Container(
           child: GestureDetector(
             onTap: () {
-              Navigator.pushNamed(context, "/events_list");
+              Navigator.pushNamed(context, "/events_list", arguments: {
+                'name': category['name'],
+                'events': category['events']
+              });
             },
             child: Container(
                 decoration: BoxDecoration(
