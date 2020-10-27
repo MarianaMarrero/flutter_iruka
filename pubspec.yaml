@@ -27,6 +27,8 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.0
+  provider: ^3.0.0
+  rxdart: ^0.22.0
 
 dev_dependencies:
   flutter_test:
@@ -44,21 +46,31 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/logo.png
-  #   - images/a_dot_ham.jpeg
-  # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/assets-and-images/#resolution-aware.
-  # For details regarding adding assets from package dependencies, see
-  # https://flutter.dev/assets-and-images/#from-packages
-  # To add custom fonts to your application, add a fonts section here,
-  # in this "flutter" section. Each entry in this list should have a
-  # "family" key with the font family name, and a "fonts" key with a
-  # list giving the asset and other descriptors for the font. For
-  # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+    - assets/images/logo.png
+    - assets/images/irukaicono-niño.png
+    - assets/images/irukaicono-close.png
+    - assets/images/iruka-icono-padre.png
+    - assets/images/irukaicono-add.png
+    - assets/images/irukaicono-info.png
+    - assets/images/irukaicono-setting.png
+    - assets/images/irukaicono-exit.png
+    - assets/images/irukaexamenes.png
+    - assets/irukafisioterapia.png
+    - assets/irukavacuna.png
+    - assets/irukapsicoterapia.png
+    - assets/irukaoreja.png
+    - assets/irukanatacion.png
+    - assets/irukamaestra.png
+    - assets/irukamusica.png
+    - assets/irukalente.png
+    - assets/irukadiente.png
+    - assets/irukaacompanante.png
+    - assets/irukaaptitud-fisica.png
+
+  fonts:
+    - family: Oswald
+      fonts:
+        - asset: assets/fonts/Oswald-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
